@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="login.css" type="text/css" />
+    <jsp:include page="cssLoader.jsp"></jsp:include>
 </head>
 <body>
 <div class="login-page">
