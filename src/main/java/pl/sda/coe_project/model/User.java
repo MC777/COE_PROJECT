@@ -26,11 +26,10 @@ public class User implements UserDetails {
 
     private String password;
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-
-        return convertAuthorities();
-
+        return null;
     }
 
     @Override
@@ -59,7 +58,7 @@ public class User implements UserDetails {
 
         for (UserRole role : userRoles) {
 
-            authorities.add(new SimpleGrantedAuthority(role.getRole()));
+            authorities.add(new SimpleGrantedAuthority(role.getAuthority()));
 
         }
 
