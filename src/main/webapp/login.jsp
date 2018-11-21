@@ -1,3 +1,4 @@
+<%@ page import="pl.sda.coe_project.model.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
@@ -21,6 +22,7 @@
     <jsp:include page="cssLoader.jsp"></jsp:include>
 </head>
 <body>
+<% User user = (User) session.getAttribute("user"); %>
 <div class="container-fluid bg">
     <div class="form">
         <div class="col-md-4 col-sm-4 col-xs-12"></div>
