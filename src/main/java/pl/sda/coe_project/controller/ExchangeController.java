@@ -12,6 +12,6 @@ public class ExchangeController {
 
     @GetMapping("/myForm")
     public String getProtectedView() {
-        return "main.jsp";
+        return "/index.jsp";
     }
 }
