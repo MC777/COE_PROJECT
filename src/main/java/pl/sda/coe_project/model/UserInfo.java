@@ -16,7 +16,7 @@ public class UserInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_user_info")
-    private Long userInfoId;
+    private Long id;
 
     @NotNull
     @Size(max = 255)
