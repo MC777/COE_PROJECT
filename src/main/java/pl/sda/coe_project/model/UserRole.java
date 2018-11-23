@@ -8,11 +8,11 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name="user_roles")
+@Table(name="userroles")
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="user_role_id")
+    @Column(name="userroleid")
     private Long userroleid;
 
     @Column(name="userid")
