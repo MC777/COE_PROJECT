@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Getter
 @Setter
@@ -15,7 +16,7 @@ public class Ore {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_ore")
-    private Long oreId;
+    private Long id;
 
     @NotNull
     @Size(max = 255)
@@ -33,4 +34,7 @@ public class Ore {
 
     @Column(name = "enabled")
     private Boolean enabled;
+
+    @OneToMany(mappedBy = "ore")
+    private List<OreWallet> oreWalletList;
 }
