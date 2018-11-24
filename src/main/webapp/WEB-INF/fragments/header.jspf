@@ -1,3 +1,4 @@
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <style>
     .navbar {
         background-color: #2E2E2E !important;
@@ -65,7 +66,18 @@
 
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Sign in / out</a></li>
+                        <security:authorize access="isAuthenticated()">
+                            <<form action="/myLogout" method="post">
+                            <button type="button" class="btn btn-primary">Log Out</button>
+                            </form>
+                        </security:authorize>
+
+                        <security:authorize access="!isAuthenticated()">
+                            <a href="/myForm">
+                                <button type="button" class="btn btn-success">Log In</button>
+                            </a>
+                        </security:authorize>
+                        </li>
                     </ul>
 
                 </li>
