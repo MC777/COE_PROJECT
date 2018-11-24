@@ -1,6 +1,7 @@
 <style>
     .navbar {
         background-color: #2E2E2E !important;
+        position: static;
     }
 
     .dropdown-menu > li > a:hover,
@@ -64,7 +65,7 @@
 
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Sign out</a></li>
+                        <li><a href="#">Sign in / out</a></li>
                     </ul>
 
                 </li>

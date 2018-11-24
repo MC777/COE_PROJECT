@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
     <title>Currency Online Exchange</title>
@@ -16,6 +17,7 @@
     <div class="alert alert-success" role="alert">
         <strong>Test</strong> Text for test.
     </div>
+
 </div>
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
 <script src="webjars/bootstrap/4.0.0-2/js/bootstrap.js"></script>
