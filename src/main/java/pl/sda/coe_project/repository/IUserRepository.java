@@ -6,5 +6,5 @@ import pl.sda.coe_project.model.User;
 
 @Repository
 public interface IUserRepository extends JpaRepository<User, Long> {
-    public User findByUserName(String userName);
+    User findByUserName(String userName);
 }
