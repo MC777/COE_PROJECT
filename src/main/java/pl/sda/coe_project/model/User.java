@@ -2,25 +2,30 @@ package pl.sda.coe_project.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Collection;
 import java.util.List;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_user")
     private Long userId;
 
     @NotNull
     @Size(max = 255)
-    @Column(name = "user_name")
+    @Column(name = "username")
     private String userName;
 
     @NotNull
@@ -32,7 +37,9 @@ public class User {
     @Column(name ="enabled")
     private int enabled;
 
-    @NotNull
+    @OneToMany(mappedBy = "user")
+    private List<UserRole> userRoles;
+
     @OneToOne
     @JoinColumn(name = "user_name_id")
     private UserInfo userInfo;
@@ -52,5 +59,36 @@ public class User {
     public User(String username, String password) {
         this.userName = username;
         this.password = password;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        String roles= StringUtils.collectionToCommaDelimitedString(this.getUserRoles());
+        return AuthorityUtils.commaSeparatedStringToAuthorityList(roles);
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+
+    @Override
+    public String getUsername() {
+        return this.getUsername();
     }
 }
