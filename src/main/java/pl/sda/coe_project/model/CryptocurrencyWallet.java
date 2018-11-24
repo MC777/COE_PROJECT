@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Table(name = "cryptocurrency_wallet")
 public class CryptocurrencyWallet {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cryptocurrency_wallet")
     private Long id;
 
