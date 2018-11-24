@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface IUserRoleRepository extends JpaRepository<UserRole, Long> {
     @Query("select a.role from UserRole a, User b where b.userName=?1 and a.userid=b.userId")
-    public List<String> findRoleByUserName(String authority);
+    List<String> findRoleByUserName(String authority);
 }

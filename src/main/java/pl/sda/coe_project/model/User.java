@@ -25,7 +25,7 @@ public class User implements UserDetails {
 
     @NotNull
     @Size(max = 255)
-    @Column(name = "username")
+    @Column(name = "username", unique = true)
     private String userName;
 
     @NotNull
@@ -54,11 +54,6 @@ public class User implements UserDetails {
     private List<OreWallet> oreWalletList;
 
     public User() {
-    }
-
-    public User(String username, String password) {
-        this.userName = username;
-        this.password = password;
     }
 
     @Override
