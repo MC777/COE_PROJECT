@@ -19,7 +19,7 @@
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
 
-    <jsp:include page="cssLoader.jsp"></jsp:include>
+<jsp:include page="cssLoader.jsp" />
 </head>
 <body>
 <% User user = (User) session.getAttribute("user"); %>
@@ -27,7 +27,7 @@
     <div class="form">
         <div class="col-md-4 col-sm-4 col-xs-12"></div>
         <div class="col-md-4 col-sm-4 col-xs-12">
-            <form action="/myForm" method="post" class="form-container">
+            <form action="/loginForm" method="post" class="form-container">
 
                 <h1>Please login</h1>
                 <div class="form-group">

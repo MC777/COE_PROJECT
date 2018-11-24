@@ -63,17 +63,19 @@
                         <li><a href="#">Signed as: User</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Contact</a></li>
-
+                        <security:authorize access="!isAuthenticated()">
+                        <li><a href="/registerForm">Register</a></li>
+                        </security:authorize>
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
                         <security:authorize access="isAuthenticated()">
-                            <<form action="/myLogout" method="post">
+                            <form action="/myLogout" method="post">
                             <button type="button" class="btn btn-primary">Log Out</button>
                             </form>
                         </security:authorize>
 
                         <security:authorize access="!isAuthenticated()">
-                            <a href="/myForm">
+                            <a href="/loginForm">
                                 <button type="button" class="btn btn-success">Log In</button>
                             </a>
                         </security:authorize>

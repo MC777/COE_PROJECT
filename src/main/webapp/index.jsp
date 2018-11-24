@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="theme.css" type="text/css">
 </head>
 <body>
-<jsp:include page="/WEB-INF/fragments/header.jspf"/>
+<jsp:include page="/WEB-INF/fragments/header.jsp"/>
 <div class="container mt-5">
     <div class="alert alert-success" role="alert">
         <strong>Test</strong> Text for test.
     </div>
 
 </div>
-<%@ include file="/WEB-INF/fragments/footer.jspf" %>
+<%@ include file="/WEB-INF/fragments/footer.jsp" %>
 <script src="webjars/bootstrap/4.0.0-2/js/bootstrap.js"></script>
 </body>
 </html>

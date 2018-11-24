@@ -10,10 +10,18 @@ public class ExchangeController {
         return "index.jsp";
     }
 
-    @GetMapping("/myForm")
-    public String getLoginView() { return "/login.jsp"; }
+    @GetMapping("/loginForm")
+    public String getLoginView() {
+        return "/login.jsp";
+    }
+
+    @GetMapping("/registerForm")
+    public String getRegisterView() {
+        return "/register.jsp";
+    }
 
     @GetMapping("/myLogout")
-    public String getProtectedView() {
+    public String getLogoutView() {
         return "/register.jsp";
-}}
+    }
+}
