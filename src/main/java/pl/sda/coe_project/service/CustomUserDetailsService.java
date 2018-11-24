@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import pl.sda.coe_project.model.User;
 import pl.sda.coe_project.repository.IUserRepository;
 import pl.sda.coe_project.repository.IUserRoleRepository;
-import pl.sda.coe_project.repository.CustomUserDetails;
 
 import java.util.List;
 
@@ -31,7 +30,8 @@ public class CustomUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("No user present with username: "+username);
         }else{
             List<String> userRoles=userRolesRepository.findRoleByUserName(username);
-            return new CustomUserDetails(user.getUserName(), user.getPassword(),userRoles);
+            //return new CustomUserDetails(user.getUserName(), user.getPassword(),userRoles);
+            return user;
         }
     }
 }
