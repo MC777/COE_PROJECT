@@ -12,15 +12,13 @@ import javax.persistence.*;
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="userroleid")
-    private Long userroleid;
-
-    @Column(name="userid")
-    private Long userid;
+    @Column(name="id_user_role")
+    private Long id;
 
     @Column(name="role")
     private String role;
 
+    @Column(name="description")
     private String description;
 
     @ManyToOne
