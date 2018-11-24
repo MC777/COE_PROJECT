@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Table(name="userroles")
 public class UserRole {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="userroleid")
     private Long userroleid;
 
@@ -20,6 +20,8 @@ public class UserRole {
 
     @Column(name="role")
     private String role;
+
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

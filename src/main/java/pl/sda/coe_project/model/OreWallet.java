@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Table(name = "ore_wallet")
 public class OreWallet {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_ore_wallet")
     private Long id;
 
