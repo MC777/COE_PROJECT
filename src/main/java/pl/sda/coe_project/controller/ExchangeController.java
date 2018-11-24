@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ExchangeController {
     @GetMapping("/")
     public String getMainView() {
-        return "login.jsp";
+        return "index.jsp";
     }
 
     @GetMapping("/myForm")
+    public String getLoginView() { return "/login.jsp"; }
+
+    @GetMapping("/myLogout")
     public String getProtectedView() {
-        return "/index.jsp";
-    }
-}
+        return "/register.jsp";
+}}
