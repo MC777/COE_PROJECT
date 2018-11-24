@@ -16,6 +16,7 @@
     <div class="alert alert-success" role="alert">
         <strong>Test</strong> Text for test.
     </div>
+
 </div>
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
 <script src="webjars/bootstrap/4.0.0-2/js/bootstrap.js"></script>
