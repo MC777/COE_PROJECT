@@ -23,16 +23,14 @@
 </head>
 <body>
 <div class="container-fluid login_background">
-    <div class="form">
-        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="row justify-content-center">
         <div class="col-md-4 col-sm-4 col-xs-12">
-            <form action="/loginForm" method="post" class="form-container">
+            <form class="form-container" action="/loginForm" method="post">
 
                 <h1>Please login</h1>
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-                    </small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
@@ -47,7 +45,6 @@
             </form>
         </div>
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-12"></div>
 </div>
 </body>
 </html>
