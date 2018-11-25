@@ -10,6 +10,7 @@ import org.springframework.util.StringUtils;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -37,8 +38,8 @@ public class User implements UserDetails {
     @Column(name ="enabled")
     private int enabled;
 
-    @OneToMany(mappedBy = "user")
-    private List<UserRole> userRoles;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    private List<UserRole> userRoles = new ArrayList<>();
 
     @OneToOne
     @JoinColumn(name = "user_name_id")
