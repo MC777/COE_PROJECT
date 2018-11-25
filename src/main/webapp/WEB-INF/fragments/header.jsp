@@ -1,32 +1,4 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
-<style>
-    .navbar {
-        background-color: #2E2E2E !important;
-        position: static;
-    }
-
-    .dropdown-menu > li > a:hover,
-    .dropdown-menu > li > a:focus {
-        color: white;
-        text-decoration: white;
-        background-color: green;
-    }
-
-    .nav > li > a:hover,
-    .nav > li > a:focus {
-        text-decoration: white;
-        background-color: white;
-    }
-
-    .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-        background-color: black;
-        color: white;
-    }
-
-    .collapse ul.navbar-nav > li > a {
-        color: white;
-    }
-</style>
 
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -51,7 +23,6 @@
                 <li><a href="#">Wallet</a></li>
                 <li><a href="#">Conntact</a></li>
             </ul>
-
 
             <ul class="nav navbar-nav navbar-right">
 

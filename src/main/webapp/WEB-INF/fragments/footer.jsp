@@ -1,17 +1,3 @@
-<!-- Footer -->
-<style>
-    .page-footer  {
-        background: #212121;
-        color: white;
-    }
-    .page-footer  {
-        position: relative;
-        margin-bottom: -150px; /* negative value of footer height */
-        height: 250px;
-        clear:both;
-        padding-bottom:10px;
-    }
-</style>
 <footer class="page-footer font-small mdb-color pt-4">
 
     <div class="container text-center text-md-left">
@@ -23,8 +9,6 @@
                 <p>Our aim is to simplify the process of currency exchange online with high standards of safety. Just to
                     make your life easier.</p>
             </div>
-
-
 
             <div class="col-sm-4 col-md col-sm-4  col-12 col">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
@@ -41,8 +25,6 @@
                     <a href="#!">Wallet</a>
                 </p>
             </div>
-
-
 
             <div class="col-sm-4 col-md col-sm-4  col-12 col">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
