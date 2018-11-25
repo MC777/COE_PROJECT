@@ -37,7 +37,9 @@
                         <security:authorize access="!isAuthenticated()">
                             <li><a href="/registerForm">Register</a></li>
                         </security:authorize>
+                        <security:authorize access="isAuthenticated()">
                         <li><a href="#">Settings</a></li>
+                        </security:authorize>
                         <li role="separator" class="divider"></li>
                         <security:authorize access="isAuthenticated()">
                             <form action="/myLogout" method="post">

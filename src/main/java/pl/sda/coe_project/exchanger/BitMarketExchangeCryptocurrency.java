@@ -9,13 +9,12 @@ import java.math.BigDecimal;
 @Component
 @Getter
 @Setter
-public class BankExchangeCryptocurrency {
-    private BigDecimal max;
-    private BigDecimal min;
-    private BigDecimal last;
-    private BigDecimal bid;
+public class BitMarketExchangeCryptocurrency {
     private BigDecimal ask;
+    private BigDecimal bid;
+    private BigDecimal last;
+    private BigDecimal low;
+    private BigDecimal high;
     private BigDecimal vwap;
-    private BigDecimal average;
     private BigDecimal volume;
 }
