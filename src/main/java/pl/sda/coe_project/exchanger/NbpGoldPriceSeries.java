@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Component
 @Getter
 @Setter
-public class NbpExchangeGoldPrice {
+public class NbpGoldPriceSeries {
     private String data;
     private BigDecimal cena;
 }
