@@ -10,6 +10,7 @@ import org.springframework.util.StringUtils;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -21,11 +22,11 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_user")
-    private Long userId;
+    private Long id;
 
     @NotNull
     @Size(max = 255)
-    @Column(name = "username")
+    @Column(name = "username", unique = true)
     private String userName;
 
     @NotNull
@@ -37,8 +38,8 @@ public class User implements UserDetails {
     @Column(name ="enabled")
     private int enabled;
 
-    @OneToMany(mappedBy = "user")
-    private List<UserRole> userRoles;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    private List<UserRole> userRoles = new ArrayList<>();
 
     @OneToOne
     @JoinColumn(name = "user_name_id")
@@ -54,11 +55,6 @@ public class User implements UserDetails {
     private List<OreWallet> oreWalletList;
 
     public User() {
-    }
-
-    public User(String username, String password) {
-        this.userName = username;
-        this.password = password;
     }
 
     @Override

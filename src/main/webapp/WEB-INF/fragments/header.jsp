@@ -1,30 +1,4 @@
-<style>
-    .navbar {
-        background-color: #2E2E2E !important;
-    }
-
-    .dropdown-menu > li > a:hover,
-    .dropdown-menu > li > a:focus {
-        color: white;
-        text-decoration: white;
-        background-color: green;
-    }
-
-    .nav > li > a:hover,
-    .nav > li > a:focus {
-        text-decoration: white;
-        background-color: white;
-    }
-
-    .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-        background-color: black;
-        color: white;
-    }
-
-    .collapse ul.navbar-nav > li > a {
-        color: white;
-    }
-</style>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -50,7 +24,6 @@
                 <li><a href="#">Conntact</a></li>
             </ul>
 
-
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
@@ -61,10 +34,23 @@
                         <li><a href="#">Signed as: User</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Contact</a></li>
-
+                        <security:authorize access="!isAuthenticated()">
+                            <li><a href="/registerForm">Register</a></li>
+                        </security:authorize>
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Sign out</a></li>
+                        <security:authorize access="isAuthenticated()">
+                            <form action="/myLogout" method="post">
+                                <button type="submit" class="btn btn-primary">Log Out</button>
+                            </form>
+                        </security:authorize>
+
+                        <security:authorize access="!isAuthenticated()">
+                            <a href="/loginForm">
+                                <button type="button" class="btn btn-success">Log In</button>
+                            </a>
+                        </security:authorize>
+                        </li>
                     </ul>
 
                 </li>

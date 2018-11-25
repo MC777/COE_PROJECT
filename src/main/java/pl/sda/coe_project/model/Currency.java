@@ -14,7 +14,7 @@ import java.util.List;
 @Table(name = "currency")
 public class Currency {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_currency")
     private Long id;
 

@@ -8,20 +8,16 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name="userroles")
+@Table(name="user_roles")
 public class UserRole {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="userroleid")
-    private Long userroleid;
-
-    @Column(name="userid")
-    private Long userid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_user_role")
+    private Long id;
 
     @Column(name="role")
     private String role;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name="description")
+    private String description;
 }

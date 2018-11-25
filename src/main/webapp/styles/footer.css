@@ -1,0 +1,11 @@
+.page-footer  {
+    background: #212121;
+    color: white;
+}
+.page-footer  {
+    position: relative;
+    margin-bottom: -150px; /* negative value of footer height */
+    height: 250px;
+    clear:both;
+    padding-bottom:10px;
+}

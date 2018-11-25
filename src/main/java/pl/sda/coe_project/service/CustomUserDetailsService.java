@@ -9,8 +9,6 @@ import pl.sda.coe_project.model.User;
 import pl.sda.coe_project.repository.IUserRepository;
 import pl.sda.coe_project.repository.IUserRoleRepository;
 
-import java.util.List;
-
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
     private final IUserRepository userRepository;
@@ -24,13 +22,13 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user=userRepository.findByUserName(username);
+        User user = userRepository.findByUserName(username);
 
-        if(null == user){
-            throw new UsernameNotFoundException("No user present with username: "+username);
-        }else{
-            List<String> userRoles=userRolesRepository.findRoleByUserName(username);
-            //return new CustomUserDetails(user.getUserName(), user.getPassword(),userRoles);
+        if (null == user) {
+            throw new UsernameNotFoundException("No user present with username: " + username);
+        } else {
+//            List<String> userRoles=userRolesRepository.findRoleByUserName(username);
+//            return new CustomUserDetails(user.getUserName(), user.getPassword(),userRoles);
             return user;
         }
     }

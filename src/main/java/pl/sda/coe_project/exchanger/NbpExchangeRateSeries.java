@@ -1,4 +1,4 @@
-package pl.sda.coe_project.connector;
+package pl.sda.coe_project.exchanger;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,9 +9,9 @@ import java.util.List;
 @Component
 @Getter
 @Setter
-public class RequesSampleExchangeratesDataResponse {
+public class NbpExchangeRateSeries {
     private String table;
     private String currency;
     private String code;
-    List<RequesSampleRateDataResponse> rates;
+    List<NbpRateSeries> rates;
 }

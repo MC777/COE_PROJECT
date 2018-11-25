@@ -1,25 +1,16 @@
-<!-- Footer -->
-<style>
-    .page-footer  {
-        background: #212121;
-        color: white;
-    }
-</style>
 <footer class="page-footer font-small mdb-color pt-4">
 
     <div class="container text-center text-md-left">
 
         <div class="row text-center text-md-left mt-3 pb-3">
 
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+            <div class="col-sm-4 col-md col-sm-4  col-12 col">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Currency Online Exchange</h6>
                 <p>Our aim is to simplify the process of currency exchange online with high standards of safety. Just to
                     make your life easier.</p>
             </div>
 
-            <hr class="w-100 clearfix d-md-none">
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-4">
+            <div class="col-sm-4 col-md col-sm-4  col-12 col">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
                 <p>
                     <a href="#!">Exchange</a>
@@ -35,9 +26,7 @@
                 </p>
             </div>
 
-            <hr class="w-100 clearfix d-md-none">
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
+            <div class="col-sm-4 col-md col-sm-4  col-12 col">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <p>
                     <i class="fa fa-home mr-3"></i> Krakow, 112233, PL</p>
