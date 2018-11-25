@@ -64,13 +64,13 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Contact</a></li>
                         <security:authorize access="!isAuthenticated()">
-                        <li><a href="/registerForm">Register</a></li>
+                            <li><a href="/registerForm">Register</a></li>
                         </security:authorize>
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
                         <security:authorize access="isAuthenticated()">
                             <form action="/myLogout" method="post">
-                            <button type="button" class="btn btn-primary">Log Out</button>
+                                <button type="submit" class="btn btn-primary">Log Out</button>
                             </form>
                         </security:authorize>
 
