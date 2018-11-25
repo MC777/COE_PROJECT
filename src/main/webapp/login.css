@@ -3,7 +3,7 @@
 }
 
 .bg {
-    background: url('../resources/images/login_background.jpg') no-repeat;
+    background: url('resources/login_background.jpg') no-repeat;
     width: 100%;
     height: 100vh;
 }
