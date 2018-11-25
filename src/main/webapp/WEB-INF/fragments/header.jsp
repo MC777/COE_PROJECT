@@ -31,28 +31,30 @@
                        aria-expanded="false"><i class="glyphicon glyphicon-user"></i> User <span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Signed as: User</a></li>
-                        <li role="separator" class="divider"></li>
+                        <security:authorize access="isAuthenticated()">
+                            <li style="padding-left: 18px">Signed as: <security:authentication
+                                    property="principal.username"/></li>
+                            <li role="separator" class="divider"></li>
+                        </security:authorize>
                         <li><a href="#">Contact</a></li>
                         <security:authorize access="!isAuthenticated()">
                             <li><a href="/registerForm">Register</a></li>
                         </security:authorize>
                         <security:authorize access="isAuthenticated()">
-                        <li><a href="#">Settings</a></li>
+                            <li><a href="#">Settings</a></li>
                         </security:authorize>
                         <li role="separator" class="divider"></li>
                         <security:authorize access="isAuthenticated()">
-                            <form action="/myLogout" method="post">
+                            <form action="/myLogout" method="post" style="padding-left: 18px; margin-bottom: 0;">
                                 <button type="submit" class="btn btn-primary">Log Out</button>
                             </form>
                         </security:authorize>
 
                         <security:authorize access="!isAuthenticated()">
-                            <a href="/loginForm">
+                            <a href="/loginForm" style="padding-left: 18px">
                                 <button type="button" class="btn btn-success">Log In</button>
                             </a>
                         </security:authorize>
-                        </li>
                     </ul>
 
                 </li>
