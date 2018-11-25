@@ -37,3 +37,8 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
+label.error {
+    color: rgb(189, 33, 48);
+    margin-top: 4px;
+}
