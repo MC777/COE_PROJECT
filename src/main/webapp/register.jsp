@@ -39,7 +39,7 @@
                         <div class="form-group row">
                             <label for="surname" class="col-md-4 col-form-label text-md-right">Surname</label>
                             <div class="col-md-6">
-                                <input type="text" id="surname" class="form-control" name="surname">
+                                <input type="text" id="surname" class="form-control" name="surname" required>
                             </div>
                         </div>
 
@@ -47,14 +47,14 @@
                             <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
                                 Address</label>
                             <div class="col-md-6">
-                                <input type="text" id="email_address" class="form-control" name="email-address">
+                                <input type="text" id="email_address" class="form-control" name="email-address" required>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="pesel" class="col-md-4 col-form-label text-md-right">PESEL</label>
                             <div class="col-md-6">
-                                <input type="text" id="pesel" class="form-control" name="pesel">
+                                <input type="text" id="pesel" class="form-control" name="pesel" required>
                             </div>
                         </div>
 
@@ -62,14 +62,14 @@
                             <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone
                                 Number</label>
                             <div class="col-md-6">
-                                <input type="text" id="phone_number" class="form-control">
+                                <input type="text" id="phone_number" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">Address</label>
                             <div class="col-md-6">
-                                <input type="text" id="address" class="form-control">
+                                <input type="text" id="address" class="form-control" required>
                             </div>
                         </div>
 
@@ -77,14 +77,14 @@
                             <label for="postal_code" class="col-md-4 col-form-label text-md-right">Postal
                                 code</label>
                             <div class="col-md-6">
-                                <input type="text" id="postal_code" class="form-control" name="postal-code">
+                                <input type="text" id="postal_code" class="form-control" name="postal-code" required>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="city" class="col-md-4 col-form-label text-md-right">City</label>
                             <div class="col-md-6">
-                                <input type="text" id="city" class="form-control" name="city">
+                                <input type="text" id="city" class="form-control" name="city" required>
                             </div>
                         </div>
 
