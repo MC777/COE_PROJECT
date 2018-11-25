@@ -1,18 +1,20 @@
 package pl.sda.coe_project.connector;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import pl.sda.coe_project.exchanger.NbpExchangeGoldPriceSeries;
 import pl.sda.coe_project.exchanger.NbpGoldPriceSeries;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Component
 public class NbpGoldPriceConnector {
-    private static final String REQRES_URL="http://api.nbp.pl/api/cenyzlota/last/{topCount}/?format=json";
+    private static final String REQRES_URL="http://api.nbp.pl/api/cenyzlota/last/1/?format=json";
     private final RestTemplate restTemplate;
 
     @Autowired
@@ -20,12 +22,13 @@ public class NbpGoldPriceConnector {
         this.restTemplate = restTemplate;
     }
 
-    public NbpExchangeGoldPriceSeries connect(String counts) {
+    public List<NbpGoldPriceSeries> connect(String counts) {
         Map<String, String> params = prepareUriParams(counts);
 
-        ResponseEntity<NbpExchangeGoldPriceSeries> currencyRate =
-                restTemplate.getForEntity(REQRES_URL, NbpExchangeGoldPriceSeries.class, params);
-
+        ResponseEntity<List<NbpGoldPriceSeries>> currencyRate =
+                restTemplate.exchange(REQRES_URL, HttpMethod.GET, null,
+                        new ParameterizedTypeReference<List<NbpGoldPriceSeries>>() {
+                });
         return currencyRate.getBody();
     }
 

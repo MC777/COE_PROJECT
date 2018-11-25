@@ -6,13 +6,12 @@ import org.apache.http.impl.client.HttpClients;
 import org.junit.Test;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
-import pl.sda.coe_project.exchanger.NbpGoldPriceSeries;
-
-import java.util.List;
+import pl.sda.coe_project.exchanger.BitMarketExchangeCryptocurrency;
 
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.*;
 
-public class NbpGoldPriceConnectorTest {
+public class BitMarketExchangeCryptocurrencyConnectorTest {
 
     @Test
     public void connect() {
@@ -21,11 +20,10 @@ public class NbpGoldPriceConnectorTest {
         requestFactory.setHttpClient(httpClient);
         RestTemplate restTemplate = new RestTemplate(requestFactory);
 
-        NbpGoldPriceConnector connector = new NbpGoldPriceConnector(restTemplate);
+        BitMarketExchangeCryptocurrencyConnector connector = new BitMarketExchangeCryptocurrencyConnector(restTemplate);
 
-        List<NbpGoldPriceSeries> response = connector.connect("1");
+        BitMarketExchangeCryptocurrency respons = connector.connect("BTC", "PLN");
 
-        //assertEquals(response.get(0).getCena(), 148.98);
-
+        //assertEquals(respons.getAsk() , 	14555.8);
     }
 }
