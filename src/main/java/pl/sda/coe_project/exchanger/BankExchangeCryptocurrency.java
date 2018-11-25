@@ -1,4 +1,4 @@
-package pl.sda.coe_project.connector;
+package pl.sda.coe_project.exchanger;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Component
 @Getter
 @Setter
-public class RequesSampleExchangeCryptocurrencyDataResponse {
+public class BankExchangeCryptocurrency {
     private BigDecimal max;
     private BigDecimal min;
     private BigDecimal last;
