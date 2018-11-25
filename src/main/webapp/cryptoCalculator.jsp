@@ -22,7 +22,7 @@
     </button>
         <div class="collapse navbar-collapse" id="navbar12"> <a href="#" class="navbar-brand d-none d-md-block w-25">
             <i class="fa fa-refresh fa-spin fa-fw fa-lg"></i>
-            <b class="h-100 w-25 text-capitalize"> CEO </b>
+            <b class="h-100 w-25 text-capitalize"> COE </b>
         </a>
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"> <a class="nav-link" href="#">Wymiana walut</a> </li>
