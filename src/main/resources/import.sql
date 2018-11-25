@@ -1,8 +1,8 @@
-INSERT INTO `coe`.`user` ( `enabled`, `password`, `username`, `user_name_id`) VALUES (1, 'admin', 'admin', '1');
-INSERT INTO `coe`.`user` ( `enabled`, `password`, `username`, `user_name_id`) VALUES (1, 'user', 'user', '2');
+INSERT INTO `coe`.`user` ( `enabled`, `password`, `username`, `user_name_id`) VALUES (1, '{noop}admin', 'admin', '1');
+INSERT INTO `coe`.`user` ( `enabled`, `password`, `username`, `user_name_id`) VALUES (1, '{noop}user', 'user', '2');
 
-INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`, `user_id`) VALUES ('1', 'admin role', 'admin', '1');
-INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`, `user_id`) VALUES ('2', 'user role', 'user', '2');
+INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`) VALUES ('1', 'admin role', 'ROLE_ADMIN');
+INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`) VALUES ('2', 'user role', 'ROLE_USER');
 
 INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizeship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('1', 'Kazimierz Wielkiego', 'Polska', 'Krakow', 'a@gmail.com', 'Kamil', '86041516789', '+48888666333', '32-700', 'Nowak');
 INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizeship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('2', 'Zygmunta Augusta', 'Polska', 'Warszawa', 'b@gmail.com', 'Ania', '91234567', '+2298249', '22-100', 'Kowalska');
