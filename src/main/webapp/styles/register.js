@@ -1,37 +1,59 @@
-function validform() {
+/*function validform() {
 
-    var a = document.forms["my-form"]["name"].value;
-    var b = document.forms["my-form"]["surname"].value;
-    var c = document.forms["my-form"]["email-address"].value;
-    var d = document.forms["my-form"]["pesel"].value;
-    var e = document.forms["my-form"]["phone-number"].value;
-    var f = document.forms["my-form"]["address"].value;
-    var g = document.forms["my-form"]["postal-code"].value;
-    var h = document.forms["my-form"]["city"].value;
+    var baseForm = $('#register_form');
+    baseForm.submit();
+}*/
 
-    if (a == null || a == "") {
-        alert("Please Enter Your Name");
-        return false;
-    } else if (b == null || b == "") {
-        alert("Please Enter Your Surname");
-        return false;
-    } else if (c == null || c == "") {
-        alert("Please Enter Your Email Address");
-        return false;
-    } else if (c == null || d == "") {
-        alert("Please Enter Your Pesel");
-        return false;
-    } else if (d == null || e == "") {
-        alert("Please Enter Your Phone-number");
-        return false;
-    } else if (e == null || f == "") {
-        alert("Please Enter Your Address");
-        return false;
-    } else if (e == null || g == "") {
-        alert("Please Enter Your Postal Code");
-        return false;
-    } else if (e == null || h == "") {
-        alert("Please Enter Your City");
-        return false;
-    }
-}
+$(document).ready(function () {
+    $('#register_form').validate({
+        rules: {
+            name: "required",
+            surname: "required",
+            email_address: {
+                required: true,
+                email: true
+            },
+            username: {
+                required: true,
+                minlength: 3
+            },
+            password: {
+                required: true,
+                minlength: 4
+            },
+            confirm_password: {
+                required: true,
+                minlength: 4,
+                equalTo: "#password"
+            },
+            pesel: "required",
+            phone_number: "required",
+            address: "required",
+            postal_code: "required",
+            city: "required"
+        },
+        messages:{
+            name:"Please enter your name",
+            surname:"Please enter your surname",
+            email_address:"Pleaase provide your email address",
+            username:{
+                required: "Please provide your username",
+                minlenght: "Your username must be at least 3 characters long"
+            },
+            password:{
+                required: "Please provide a password",
+                minlenght: "Your password must be at least 4 characters long"
+            },
+            confirm_password:{
+                required: "Please provide a password",
+                minlenght: "Your password must be at least 4 characters long",
+                equalTo:"Please enter the same password as above"
+            },
+            pesel:"Please enter your pesel",
+            phone_number:"Please enter your phone number",
+            address:"Please enter your address",
+            postal_code:"Please enter your postal code",
+            city:"Please enter your city"
+        }
+    });
+});
