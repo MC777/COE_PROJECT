@@ -1,8 +1,5 @@
 <head>
-
     <link rel="stylesheet" type="text/css" href="styles/register.css"/>
-    <script type="text/javascript" src="styles/register.js"></script>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,14 +29,14 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
                             <div class="col-md-6">
-                                <input type="text" id="name" class="form-control" name="name" required>
+                                <input type="text" id="name" class="form-control" name="name">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="surname" class="col-md-4 col-form-label text-md-right">Surname</label>
                             <div class="col-md-6">
-                                <input type="text" id="surname" class="form-control" name="surname" required>
+                                <input type="text" id="surname" class="form-control" name="surname">
                             </div>
                         </div>
 
@@ -47,14 +44,37 @@
                             <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
                                 Address</label>
                             <div class="col-md-6">
-                                <input type="text" id="email_address" class="form-control" name="email-address" required>
+                                <input type="text" id="email_address" class="form-control" name="email_address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+                            <div class="col-md-6">
+                                <input type="text" id="username" class="form-control" name="username" >
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                            <div class="col-md-6">
+                                <input type="password" id="password" class="form-control" name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Confirm
+                                Password</label>
+                            <div class="col-md-6">
+                                <input type="password" id="confirm_password" class="form-control"
+                                       name="confirm_password">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="pesel" class="col-md-4 col-form-label text-md-right">PESEL</label>
                             <div class="col-md-6">
-                                <input type="text" id="pesel" class="form-control" name="pesel" required>
+                                <input type="text" id="pesel" class="form-control" name="pesel">
                             </div>
                         </div>
 
@@ -62,14 +82,14 @@
                             <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone
                                 Number</label>
                             <div class="col-md-6">
-                                <input type="text" id="phone_number" class="form-control" required>
+                                <input type="text" id="phone_number" class="form-control" name="phone_number">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">Address</label>
                             <div class="col-md-6">
-                                <input type="text" id="address" class="form-control" required>
+                                <input type="text" id="address" class="form-control" name="address">
                             </div>
                         </div>
 
@@ -77,14 +97,14 @@
                             <label for="postal_code" class="col-md-4 col-form-label text-md-right">Postal
                                 code</label>
                             <div class="col-md-6">
-                                <input type="text" id="postal_code" class="form-control" name="postal-code" required>
+                                <input type="text" id="postal_code" class="form-control" name="postal_code">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="city" class="col-md-4 col-form-label text-md-right">City</label>
                             <div class="col-md-6">
-                                <input type="text" id="city" class="form-control" name="city" required>
+                                <input type="text" id="city" class="form-control" name="city">
                             </div>
                         </div>
 
@@ -99,13 +119,8 @@
         </div>
     </div>
 
-
 </main>
-<script>
-    $( document ).ready(function() {
-        $('#register_form').validate();
-    });
-</script>
+<script type="text/javascript" src="styles/register.js"></script>
 </body>
 </html>
 
