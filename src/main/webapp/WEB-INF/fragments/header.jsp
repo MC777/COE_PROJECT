@@ -32,8 +32,8 @@
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <security:authorize access="isAuthenticated()">
-                            <li style="padding-left: 18px">Signed as: <security:authentication
-                                    property="principal.username"/></li>
+                            <li style="padding-left: 18px">Signed as: <b><security:authentication
+                                    property="principal.username"/></b></li>
                             <li role="separator" class="divider"></li>
                         </security:authorize>
                         <li><a href="#">Contact</a></li>
