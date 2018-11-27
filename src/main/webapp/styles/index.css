@@ -1,7 +1,7 @@
 header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 90vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -42,7 +42,13 @@ header .overlay {
     header {
         background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
+
     header video {
         display: none;
     }
+}
+
+header .card-subtitle {
+    color: white;
+    margin-top: 80px;
 }
