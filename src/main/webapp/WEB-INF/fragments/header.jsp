@@ -23,7 +23,9 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                <security:authorize access="isAuthenticated()">
                 <li><a href="#"><span class="badge badge-pill badge-success">Wallet: 1000</span></a></li>
+                </security:authorize>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><i class="glyphicon glyphicon-user"></i> User <span
