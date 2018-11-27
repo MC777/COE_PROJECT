@@ -1,48 +1,20 @@
-<footer class="page-footer font-small mdb-color pt-4">
-
-    <div class="container text-center text-md-left">
-
-        <div class="row text-center text-md-left mt-3 pb-3">
-
-            <div class="col-sm-4 col-md col-sm-4  col-12 col">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Currency Online Exchange</h6>
-                <p>Our aim is to simplify the process of currency exchange online with high standards of safety. Just to
-                    make your life easier.</p>
-            </div>
-
-            <div class="col-sm-4 col-md col-sm-4  col-12 col">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-                <p>
-                    <a href="#!">Exchange</a>
-                </p>
-                <p>
-                    <a href="#!">Cryptocurrency</a>
-                </p>
-                <p>
-                    <a href="#!">Gold</a>
-                </p>
-                <p>
-                    <a href="#!">Wallet</a>
-                </p>
-            </div>
-
-            <div class="col-sm-4 col-md col-sm-4  col-12 col">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p>
-                    <i class="fa fa-home mr-3"></i> Krakow, 112233, PL</p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> fake@gmail.com</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> + 01 222 333 44</p>
-                <p>
-                    <i class="fa fa-print mr-3"></i> + 01 222 333 55</p>
-            </div>
-        </div>
-
-        <hr>
-        <div class="row d-flex align-items-center">
-            <div class="col-md-7 col-lg-12">
-                <p class="text-center text-md-center">© 2018 Copyright: CEO</p>
+<footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-copyright">
+                    &copy; 2018 Copyright: CEO
+                </div>
+                <div class="col-md-4 footer-register">
+                <ul class="list-unstyled list-inline text-center py-2">
+                    <li class="list-inline-item">
+                    <a href="#!" class="btn btn-danger btn-rounded">REGISTER</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-md-4 footer-social">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/MC777/COE_PROJECT/"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
