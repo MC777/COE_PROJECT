@@ -1,21 +1,19 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><b class="glyphicon glyphicon-menu-right"></b></a>
+            <a class="navbar-brand" href="#"><b class="glyphicon glyphicon-chevron-right"></b></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="#">Exchange</a></li>
                 <li><a href="#">Cryptocurrency</a></li>
@@ -46,13 +44,13 @@
                         <li role="separator" class="divider"></li>
                         <security:authorize access="isAuthenticated()">
                             <form action="/myLogout" method="post" style="padding-left: 18px; margin-bottom: 0;">
-                                <button type="submit" class="btn btn-primary">Log Out</button>
+                                <button type="submit" class="btn btn-xs btn-warning">Log Out</button>
                             </form>
                         </security:authorize>
 
                         <security:authorize access="!isAuthenticated()">
                             <a href="/loginForm" style="padding-left: 18px">
-                                <button type="button" class="btn btn-success">Log In</button>
+                                <button type="button" class="btn btn-xs btn-success">Log In</button>
                             </a>
                         </security:authorize>
                     </ul>
