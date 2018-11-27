@@ -10,7 +10,7 @@
                     <security:authorize access="!isAuthenticated()">
                         <ul class="list-unstyled list-inline text-center py-2">
                             <li class="list-inline-item">
-                                <a href="#!" class="btn btn-sm btn-danger btn-rounded">REGISTER</a>
+                                <a href="/registerForm" class="btn btn-sm btn-danger btn-rounded">REGISTER</a>
                             </li>
                         </ul>
                     </security:authorize>
