@@ -1,11 +1,12 @@
-.page-footer  {
-    background: #212121;
-    color: white;
-}
-.page-footer  {
-    position: relative;
-    margin-bottom: -150px; /* negative value of footer height */
-    height: 250px;
-    clear:both;
-    padding-bottom:10px;
-}
+.footer-bottom { padding: 0; background: #444; text-align: left; color: #aaa; }
+
+.footer-social { padding-top: 8px; text-align: right; }
+.footer-social a { margin-left: 20px; color: #777; border: 0; }
+.footer-social a:hover, .footer-social a:focus { color: white; border: 0; }
+.footer-social i { font-size: 24px; vertical-align: middle; }
+
+.footer-copyright { padding-top: 15px; }
+.footer-copyright a { color: #fff; border: 0; }
+.footer-copyright a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
+
+.footer-register{ padding-top: 8px; }
