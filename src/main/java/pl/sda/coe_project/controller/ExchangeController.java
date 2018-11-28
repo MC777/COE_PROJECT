@@ -38,4 +38,9 @@ public class ExchangeController {
         userService.addUser(user);
         return "redirect:/";
     }
+
+    @GetMapping("/adminPanel")
+    public String getAdminView() {
+        return "adminPanel.jsp";
+    }
 }
