@@ -19,7 +19,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">Exchange</a></li>
                 <li><a href="#">Cryptocurrency</a></li>
-                <li><a href="#">Gold</a></li>
+                <li><a href="gold.jsp">Gold</a></li>
                 <li><a href="#">Wallet</a></li>
                 <li><a href="#">Conntact</a></li>
             </ul>
