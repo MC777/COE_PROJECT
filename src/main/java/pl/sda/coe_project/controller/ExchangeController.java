@@ -45,7 +45,9 @@ public class ExchangeController {
     }
 
     @GetMapping("/contact")
-    public String getContactView() { return "contact.jsp"; }
+    public String getContactView() {
+        return "contact.jsp";
+    }
 
     @GetMapping("/wallet")
     public String getWalletView() {
@@ -60,10 +62,5 @@ public class ExchangeController {
     @GetMapping("/cryptocurrency")
     public String getCryptocurrencyView() {
         return "cryptocurrency.jsp";
-    }
-
-    @GetMapping("/exchange")
-    public String getExchangeView() {
-        return "exchange.jsp";
     }
 }
