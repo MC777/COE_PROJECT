@@ -10,25 +10,30 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><b class="glyphicon glyphicon-chevron-right"></b></a>
+            <a class="navbar-brand" href="/"><b class="glyphicon glyphicon-chevron-right"></b></a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Exchange</a></li>
-                <li><a href="#">Cryptocurrency</a></li>
-                <li><a href="gold.jsp">Gold</a></li>
-                <li><a href="#">Wallet</a></li>
-                <li><a href="#">Conntact</a></li>
+                <li><a href="/">Exchange</a></li>
+                <li><a href="/cryptocurrency">Cryptocurrency</a></li>
+                <li><a href="/gold">Gold</a></li>
+                <li><a href="/wallet">Wallet</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <security:authorize access="isAuthenticated() and hasRole('ROLE_ADMIN')">
+                    <li><a href="/adminPanel"><b>ADMIN</b></a></li>
+                </security:authorize>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <security:authorize access="isAuthenticated()">
-                <li><a href="#"><span class="badge badge-pill badge-success">Wallet: 1000</span></a></li>
+                    <li><a href="#"><span class="badge badge-pill badge-success">Wallet: 1000</span></a></li>
                 </security:authorize>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><i class="glyphicon glyphicon-user"></i> User <span
+                       aria-expanded="false"><i class="glyphicon glyphicon-user"></i><security:authorize
+                            access="isAuthenticated()"> <security:authentication
+                            property="principal.username"/> </security:authorize> <span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <security:authorize access="isAuthenticated()">

@@ -43,4 +43,24 @@ public class ExchangeController {
     public String getAdminView() {
         return "adminPanel.jsp";
     }
+
+    @GetMapping("/contact")
+    public String getContactView() {
+        return "contact.jsp";
+    }
+
+    @GetMapping("/wallet")
+    public String getWalletView() {
+        return "wallet.jsp";
+    }
+
+    @GetMapping("/gold")
+    public String getGoldView() {
+        return "gold.jsp";
+    }
+
+    @GetMapping("/cryptocurrency")
+    public String getCryptocurrencyView() {
+        return "cryptocurrency.jsp";
+    }
 }
