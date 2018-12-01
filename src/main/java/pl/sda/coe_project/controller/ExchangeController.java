@@ -59,8 +59,8 @@ public class ExchangeController {
         return "gold.jsp";
     }
 
-    @GetMapping("/cryptocurrency")
-    public String getCryptocurrencyView() {
-        return "cryptocurrency.jsp";
-    }
+//    @GetMapping("/cryptocurrency")
+//    public String getCryptocurrencyView() {
+//        return "cryptocurrency.jsp";
+//    }
 }

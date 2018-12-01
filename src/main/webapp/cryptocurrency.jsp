@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/header.css"/>
@@ -56,13 +57,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                        </tr>
+                        <c:forEach var="price" items="${prices}" varStatus="loop">
+                            <tr>
+                                <td>${price.cryptoName}</td>
+                                <td>${price.vwap}</td>
+                                <td>${price.low}</td>
+                                <td>${price.high}</td>
+                                <td>${price.volume}</td>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>
