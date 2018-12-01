@@ -18,8 +18,8 @@ public class UserInfoAssembler {
         userInfo.setPhone(dtoUserInfo.getPhoneNumber());
         userInfo.setAddress(dtoUserInfo.getAddress());
         userInfo.setPostCode(dtoUserInfo.getPostalCode());
-        userInfo.setCity(userInfo.getCity());
-        userInfo.setCitizenship(userInfo.getCitizenship());
+        userInfo.setCity(dtoUserInfo.getCity());
+        userInfo.setCitizenship(dtoUserInfo.getCitizenship());
         return userInfo;
     }
 
