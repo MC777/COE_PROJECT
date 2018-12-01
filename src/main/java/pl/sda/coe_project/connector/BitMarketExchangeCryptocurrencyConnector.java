@@ -1,5 +1,6 @@
 package pl.sda.coe_project.connector;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -13,6 +14,7 @@ public class BitMarketExchangeCryptocurrencyConnector {
     private static final String REQRES_URL="https://www.bitmarket.pl/json/{cryptoCurrency}{currency}/ticker.json";
     private final RestTemplate restTemplate;
 
+    @Autowired
     public BitMarketExchangeCryptocurrencyConnector(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }

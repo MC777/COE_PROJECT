@@ -17,4 +17,5 @@ public class BitMarketExchangeCryptocurrency {
     private BigDecimal high;
     private BigDecimal vwap;
     private BigDecimal volume;
+    private String cryptoName;
 }
