@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import pl.sda.coe_project.model.User;
+import pl.sda.coe_project.model.dto.UserDto;
 import pl.sda.coe_project.service.UserService;
 
 @Controller
@@ -34,7 +34,7 @@ public class ExchangeController {
     }
 
     @PostMapping("/register")
-    public String registerUser(@ModelAttribute User user) {
+    public String registerUser(@ModelAttribute UserDto user) {
         userService.addUser(user);
         return "redirect:/";
     }
