@@ -43,8 +43,8 @@ public class UserInfo {
     private String email;
 
     @Size(max = 255)
-    @Column(name = "citizeship")
-    private String citizeship;
+    @Column(name = "citizenship")
+    private String citizenship;
 
     @Size(max = 255)
     @Column(name = "address")
