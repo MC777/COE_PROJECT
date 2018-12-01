@@ -14,7 +14,7 @@ import java.util.Map;
 
 @Component
 public class NbpGoldPriceConnector {
-    private static final String REQRES_URL="http://api.nbp.pl/api/cenyzlota/last/1/?format=json";
+    private static final String REQRES_URL="http://api.nbp.pl/api/cenyzlota/last/{topCount}/?format=json";
     private final RestTemplate restTemplate;
 
     @Autowired
@@ -22,13 +22,13 @@ public class NbpGoldPriceConnector {
         this.restTemplate = restTemplate;
     }
 
-    public List<NbpGoldPriceSeries> connect(String counts) {
+    public List<NbpGoldPriceSeries> goldPrices(String counts) {
         Map<String, String> params = prepareUriParams(counts);
 
         ResponseEntity<List<NbpGoldPriceSeries>> currencyRate =
                 restTemplate.exchange(REQRES_URL, HttpMethod.GET, null,
                         new ParameterizedTypeReference<List<NbpGoldPriceSeries>>() {
-                });
+                }, params);
         return currencyRate.getBody();
     }
 

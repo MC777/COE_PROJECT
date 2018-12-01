@@ -23,7 +23,7 @@ public class NbpGoldPriceConnectorTest {
 
         NbpGoldPriceConnector connector = new NbpGoldPriceConnector(restTemplate);
 
-        List<NbpGoldPriceSeries> response = connector.connect("1");
+        List<NbpGoldPriceSeries> response = connector.goldPrices("1");
 
         //assertEquals(response.get(0).getCena(), 148.98);
 
