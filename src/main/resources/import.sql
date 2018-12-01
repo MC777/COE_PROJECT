@@ -27,3 +27,6 @@ INSERT INTO `coe`.`currency_wallet` (`id_cryptocurrency_wallet`, `quantity`, `cu
 INSERT INTO `coe`.`ore` (`id_ore`, `description`, `enabled`, `full_name`, `nickname`) VALUES ('1', 'ojo', 1, 'gold', 'GOLD');
 
 INSERT INTO `coe`.`ore_wallet` (`id_ore_wallet`, `quantity`, `ore_id`, `user_id`) VALUES ('1', '100', '1', '1');
+
+INSERT INTO `coe`.`user_user_roles` (`user_id_user`, `user_roles_id_user_role`) VALUES ('1', '1');
+INSERT INTO `coe`.`user_user_roles` (`user_id_user`, `user_roles_id_user_role`) VALUES ('2', '2');
