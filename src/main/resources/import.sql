@@ -4,8 +4,8 @@ INSERT INTO `coe`.`user` ( `enabled`, `password`, `username`, `user_name_id`) VA
 INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`) VALUES ('1', 'admin role', 'ROLE_ADMIN');
 INSERT INTO `coe`.`user_roles` (`id_user_role`, `description`, `role`) VALUES ('2', 'user role', 'ROLE_USER');
 
-INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizeship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('1', 'Kazimierz Wielkiego', 'Polska', 'Krakow', 'a@gmail.com', 'Kamil', '86041516789', '+48888666333', '32-700', 'Nowak');
-INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizeship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('2', 'Zygmunta Augusta', 'Polska', 'Warszawa', 'b@gmail.com', 'Ania', '91234567', '+2298249', '22-100', 'Kowalska');
+INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizenship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('1', 'Kazimierz Wielkiego', 'Polska', 'Krakow', 'a@gmail.com', 'Kamil', '86041516789', '+48888666333', '32-700', 'Nowak');
+INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizenship`, `city`, `email`, `name`, `pesel`, `phone`, `post_code`, `surname`) VALUES ('2', 'Zygmunta Augusta', 'Polska', 'Warszawa', 'b@gmail.com', 'Ania', '91234567', '+2298249', '22-100', 'Kowalska');
 
 INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `description`, `enabled`, `full_name`, `nickname`) VALUES ('1', '', 1, 'Bitcoin', 'BTC');
 INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `enabled`, `full_name`, `nickname`) VALUES ('2', 1, 'Bitcoin Cash', 'BCC');
