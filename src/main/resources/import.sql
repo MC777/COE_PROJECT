@@ -9,6 +9,9 @@ INSERT INTO `coe`.`user_info` (`id_user_info`, `address`, `citizenship`, `city`,
 
 INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `description`, `enabled`, `full_name`, `nickname`) VALUES ('1', '', 1, 'Bitcoin', 'BTC');
 INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `enabled`, `full_name`, `nickname`) VALUES ('2', 1, 'Bitcoin Cash', 'BCC');
+INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `enabled`, `full_name`, `nickname`) VALUES ('3', 1, 'Litecoin', 'LTC');
+INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `enabled`, `full_name`, `nickname`) VALUES ('4', 1, 'Bitcoin Gold', 'BTG');
+INSERT INTO `coe`.`cryptocurrency` (`id_cryptocurrency`, `enabled`, `full_name`, `nickname`) VALUES ('5', 1, 'Ethereum', 'ETH');
 
 INSERT INTO `coe`.`cryptocurrency_wallet` (`id_cryptocurrency_wallet`, `quantity`, `cryptocurrency_id`, `user_id`) VALUES ('1', '3.4', '1', '1');
 INSERT INTO `coe`.`cryptocurrency_wallet` (`id_cryptocurrency_wallet`, `quantity`, `cryptocurrency_id`, `user_id`) VALUES ('2', '4.4', '2', '1');
