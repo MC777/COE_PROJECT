@@ -1,11 +1,13 @@
 package pl.sda.coe_project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import pl.sda.coe_project.model.CurrencyExchangeRequest;
 import pl.sda.coe_project.model.dto.UserDto;
+import pl.sda.coe_project.service.ExchangeService;
 import pl.sda.coe_project.service.UserService;
 
 import java.security.Principal;
@@ -14,10 +16,12 @@ import java.security.Principal;
 public class ExchangeController {
 
     private final UserService userService;
+    private final ExchangeService exchangeService;
 
     @Autowired
-    public ExchangeController(UserService userService) {
+    public ExchangeController(UserService userService, ExchangeService exchangeService) {
         this.userService = userService;
+        this.exchangeService = exchangeService;
     }
 
     @GetMapping("/")
@@ -61,8 +65,10 @@ public class ExchangeController {
         return "gold.jsp";
     }
 
-//    @GetMapping("/cryptocurrency")
-//    public String getCryptocurrencyView() {
-//        return "cryptocurrency.jsp";
-//    }
+    @ResponseBody
+    @PostMapping("/exchange")
+    public ResponseEntity<Object> exchange(@RequestBody CurrencyExchangeRequest exchangeRequest) {
+
+        return new ResponseEntity<>(exchangeService.calculate(exchangeRequest), HttpStatus.OK);
+    }
 }
