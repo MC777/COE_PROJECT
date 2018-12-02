@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import pl.sda.coe_project.model.dto.UserDto;
 import pl.sda.coe_project.service.UserService;
 
+import java.security.Principal;
+
 @Controller
 public class ExchangeController {
 
@@ -19,8 +21,8 @@ public class ExchangeController {
     }
 
     @GetMapping("/")
-    public String getMainView() {
-        return "index.jsp";
+    public String getMainView(Principal principal) {
+        return "home.jsp";
     }
 
     @GetMapping("/loginForm")
