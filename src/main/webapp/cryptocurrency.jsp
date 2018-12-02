@@ -86,7 +86,7 @@
                 </div>
 
 
-                <div id="content-wrapper" style="margin-top: 60px">
+                <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
                         <!-- Breadcrumbs-->
                         <ol class="breadcrumb">
