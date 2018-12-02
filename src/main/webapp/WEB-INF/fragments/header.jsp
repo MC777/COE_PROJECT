@@ -41,7 +41,7 @@
                                     property="principal.username"/></b></li>
                             <li role="separator" class="divider"></li>
                         </security:authorize>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/contact">Contact</a></li>
                         <security:authorize access="!isAuthenticated()">
                             <li><a href="/registerForm">Register</a></li>
                         </security:authorize>
