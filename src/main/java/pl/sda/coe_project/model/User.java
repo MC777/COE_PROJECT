@@ -4,15 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.util.StringUtils;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 @Getter
 @Setter
@@ -59,8 +58,14 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        String roles= StringUtils.collectionToCommaDelimitedString(this.getUserRoles());
-        return AuthorityUtils.commaSeparatedStringToAuthorityList(roles);
+        return convertAuthorities(this.userRoles);
+    }
+    private Set<GrantedAuthority> convertAuthorities(List<UserRole> userRoles) {
+        Set<GrantedAuthority> authorities = new HashSet<>();
+        for (UserRole role : userRoles) {
+            authorities.add(new SimpleGrantedAuthority(role.getRole()));
+        }
+        return authorities;
     }
 
     @Override
