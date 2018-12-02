@@ -22,7 +22,6 @@
     <!-- Custom styles for this template -->
     <link href="/css/theme.css" rel="stylesheet">
 
-
 </head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
@@ -83,7 +82,7 @@
 
 
                 <!-- Area Chart Example-->
-                <div id="content-wrapper" style="margin-top: 60px">
+                <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
                         <div class="card mb-3">
                             <div class="card-header">
