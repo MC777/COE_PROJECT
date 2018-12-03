@@ -1,13 +1,16 @@
-.footer-bottom { position: absolute; width: 100%; height:50px; bottom: 0px; background: #444; text-align: left; color: #aaa; }
-.footer-bottom .row{margin-left: 0; margin-right: 0}
+.footer-bottom { position: fixed; width: 100%; height:50px; bottom: 0px; background: #444; text-align: left; color: #aaa; }
+.footer-bottom .row{padding: 6px; width: auto; vertical-align: middle}
+.footer-bottom {padding: 5px; vertical-align: middle; horiz-align: center}
 
-.footer-social { padding-top: 12px; text-align: left; }
-.footer-social a { margin-left: 20px; color: #777; border: 0; }
-.footer-social a:hover, .footer-social a:focus { color: white; border: 0; }
-.footer-social i { font-size: 24px; vertical-align: middle; }
-
-.footer-copyright { padding: 15px; text-align: right}
+.footer-copyright {vertical-align: middle; padding-top: 5px}
 .footer-copyright a { color: #fff; border: 0; }
 .footer-copyright a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
 
-.footer-register {padding-top: 10px; }
+.footer-register { text-align: center; vertical-align: middle}
+.footer-register a { color: #fff; border: 0; }
+.footer-register a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
+
+.footer-social { vertical-align: middle; text-align: right}
+.footer-social a { color: #fff; border: 0; }
+.footer-social a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
+.footer-social i { font-size: 26px; vertical-align: middle; }
