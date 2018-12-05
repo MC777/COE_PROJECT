@@ -2,15 +2,20 @@
     color: #fff;
 }
 
-.login_background {
+body {
     background: url('/resources/login_background.jpg') no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 .form-container {
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
     border: 0px solid #fff;
     padding: 50px 60px;
-    margin-top: 20vh;
+    margin-top: 40vh;
     vertical-align: middle;
     -webkit-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 4px 26px 11px rgba(0, 0, 0, 0.75);
