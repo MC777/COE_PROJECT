@@ -49,8 +49,9 @@ header .overlay {
 }
 
 header .card-subtitle {
-    color: white;
+    color: #222;
     margin-top: 80px;
+    font-weight: bold;
 }
 
 header .custom-select {
