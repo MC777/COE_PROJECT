@@ -1,14 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 body {
-    margin: 0;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #212529;
-    /*text-align: right;*/
     background: url('/resources/login_background.jpg') no-repeat;
-    /*width: 60%;*/
-   /* height: 100vh;*/
+    background-size: cover;
 }
 
 .navbar-laravel {
@@ -19,47 +13,38 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-brand, .nav-link, .my-form, .login-form {
-    font-family: Raleway, sans-serif;
-}
-
 .my-form {
     margin-top: 10vh;
     display: inline-block;
     margin-left: 14%;
-    margin-right:25%;
+    margin-right: 25%;
     width: 100%;
-  /*  border: 0px solid #fff;
-    padding: 50px 60px;
-    margin-top: 10vh;
-    vertical-align: middle;*/
-
-    /*padding-top: 5rem;*/
-    /*padding-bottom: 1.5rem;*/
-    /*display: inline-block;*/
-
-    /*margin-right: auto;*/
-    /*text-align: left;*/
-    /*width: 100%;*/
 }
 
 .my-form .card {
     background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.my-form .card-header {
+    text-align: center;
+    padding-top: 10px;
 }
 
 .my-form .row {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 9px;
+    text-align: center;
+}
+
+.my-form .col-form-label {
+    text-align: right;
+    padding: 6px;
+    margin-bottom: 0px;
 }
 
 .login-form {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-}
-
-.login-form .row {
-    margin-left: 0;
-    margin-right: 0;
 }
 
 label.error {
