@@ -1,15 +1,9 @@
-/*function validform() {
-
-    var baseForm = $('#register_form');
-    baseForm.submit();
-}*/
-
 $(document).ready(function () {
     $('#register_form').validate({
         rules: {
             name: "required",
             surname: "required",
-            email_address: {
+            emailAddress: {
                 required: true,
                 email: true
             },
@@ -27,15 +21,16 @@ $(document).ready(function () {
                 equalTo: "#password"
             },
             pesel: "required",
-            phone_number: "required",
+            phoneNumber: "required",
             address: "required",
-            postal_code: "required",
-            city: "required"
+            postalCode: "required",
+            city: "required",
+            citizenship: "required"
         },
         messages:{
             name:"Please enter your name",
             surname:"Please enter your surname",
-            email_address:"Pleaase provide your email address",
+            emailAddress:"Pleaase provide your email address",
             username:{
                 required: "Please provide your username",
                 minlenght: "Your username must be at least 3 characters long"
@@ -50,10 +45,11 @@ $(document).ready(function () {
                 equalTo:"Please enter the same password as above"
             },
             pesel:"Please enter your pesel",
-            phone_number:"Please enter your phone number",
+            phoneNumber:"Please enter your phone number",
             address:"Please enter your address",
-            postal_code:"Please enter your postal code",
-            city:"Please enter your city"
+            postalCode:"Please enter your postal code",
+            city:"Please enter your city",
+            citizenship:"Please enter your citizenship"
         }
     });
 });
