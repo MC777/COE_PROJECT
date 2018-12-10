@@ -20,3 +20,32 @@ $(function () {
         return false;
     });
 });
+
+$('#currencyExchangeBtn').click(function () {
+    var exchangeValueFromInput = $('#exchangeValueFromInput').val();
+    var exchangeValueToInput = $('#exchangeValueToInput').val();
+    var exchangeCurrencyFromSelect = $('#exchangeCurrencyFromSelect').val();
+    var exchangeCurrencyToSelect = $('#exchangeCurrencyToSelect').val();
+
+    $.ajax({
+        type: "POST",
+        url: "/exchange",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        data: JSON.stringify({
+            exchangeValueFrom: exchangeValueFromInput,
+            exchangeValueTo: exchangeValueToInput,
+            exchangeCurrencyFrom: exchangeCurrencyFromSelect,
+            exchangeCurrencyTo: exchangeCurrencyToSelect
+        }),
+        success: function (result) {
+            $('#exchangeValueToInput').val(result);
+        },
+        error: function (result) {
+            console.log(result);
+            alert(result.responseJSON.errorMessage || result.responseJSON.message);
+        }
+    })
+})
