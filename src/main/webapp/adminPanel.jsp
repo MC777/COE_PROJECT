@@ -63,6 +63,7 @@
 							</span>
                 </th>
                 <th>Name</th>
+                <th>Surname</th>
                 <th>Email</th>
                 <th>Address</th>
                 <th>Phone</th>
@@ -77,7 +78,8 @@
 								<label for="checkbox1"></label>
 							</span>
                 </td>
-                <td>Thomas Hardy</td>
+                <td>Thomas</td>
+                <td>Hardy</td>
                 <td>thomashardy@mail.com</td>
                 <td>89 Chiaroscuro Rd, Portland, USA</td>
                 <td>(171) 555-2222</td>
@@ -96,7 +98,8 @@
 								<label for="checkbox2"></label>
 							</span>
                 </td>
-                <td>Dominique Perrier</td>
+                <td>Dominique</td>
+                <td>Perrier</td>
                 <td>dominiqueperrier@mail.com</td>
                 <td>Obere Str. 57, Berlin, Germany</td>
                 <td>(313) 555-5735</td>
@@ -115,7 +118,8 @@
 								<label for="checkbox3"></label>
 							</span>
                 </td>
-                <td>Maria Anders</td>
+                <td>Maria</td>
+                <td>Anders</td>
                 <td>mariaanders@mail.com</td>
                 <td>25, rue Lauriston, Paris, France</td>
                 <td>(503) 555-9931</td>
@@ -134,7 +138,8 @@
 								<label for="checkbox4"></label>
 							</span>
                 </td>
-                <td>Fran Wilson</td>
+                <td>Fran</td>
+                <td>Wilson</td>
                 <td>franwilson@mail.com</td>
                 <td>C/ Araquil, 67, Madrid, Spain</td>
                 <td>(204) 619-5731</td>
@@ -153,7 +158,8 @@
 								<label for="checkbox5"></label>
 							</span>
                 </td>
-                <td>Martin Blank</td>
+                <td>Martin</td>
+                <td>Blank</td>
                 <td>martinblank@mail.com</td>
                 <td>Via Monte Bianco 34, Turin, Italy</td>
                 <td>(480) 631-2097</td>
@@ -196,6 +202,10 @@
                         <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
+                        <label>Surname</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
                         <label>Email</label>
                         <input type="email" class="form-control" required>
                     </div>
@@ -228,6 +238,10 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Surname</label>
                         <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
