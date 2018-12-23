@@ -50,3 +50,11 @@
     opacity: 6;
     font-size: 15px;
 }
+
+.currencyBuyBtn{
+    width: 150px;
+}
+
+.currencyExchangeBtn{
+    width: 150px;
+}
