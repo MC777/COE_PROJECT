@@ -85,9 +85,12 @@
                         </div>
                     </form>
                 </div>
-                <div class="card-body text-center">
-                    <button type="button" class="btn btn-primary" id="currencyExchangeBtn">Exchange Now</button>
-                </div>
+                <button type="button" class="btn btn-primary currencyExchangeBtn" id="currencyExchangeBtn">Exchange
+                    Now
+                </button>
+                <security:authorize access="isAuthenticated()">
+                    <button type="button" class="btn btn-success currencyBuyBtn" id="currencyBuyBtn">Buy Now</button>
+                </security:authorize>
             </div>
         </div>
     </div>
