@@ -1,3 +1,11 @@
 .container-fluid{
     background-color: #ffffff;
 }
+
+.goldBuyBtn{
+    width: 150px;
+}
+
+.goldExchangeBtn{
+    width: 150px;
+}
