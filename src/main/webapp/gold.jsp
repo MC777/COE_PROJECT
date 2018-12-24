@@ -76,9 +76,13 @@
                         </div>
                     </form>
                 </div>
-                <div class="card-body text-center">
-                    <button type="button" class="btn btn-primary">Exchange Now</button>
-                </div>
+
+                <button type="button" class="btn btn-primary goldExchangeBtn" id="goldExchangeBtn">Exchange
+                    Now
+                </button>
+                <security:authorize access="isAuthenticated()">
+                    <button type="button" class="btn btn-success goldBuyBtn" id="goldBuyBtn">Buy Now</button>
+                </security:authorize>
 
 
                 <!-- Area Chart Example-->
