@@ -81,10 +81,12 @@
                         </div>
                     </form>
                 </div>
-                <div class="card-body text-center">
-                    <button type="button" class="btn btn-primary">Exchange Now</button>
-                </div>
-
+                <button type="button" class="btn btn-primary cryptoExchangeBtn" id="cryptoExchangeBtn">Exchange
+                    Now
+                </button>
+                <security:authorize access="isAuthenticated()">
+                    <button type="button" class="btn btn-success cryptoBuyBtn" id="cryptoBuyBtn">Buy Now</button>
+                </security:authorize>
 
                 <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
