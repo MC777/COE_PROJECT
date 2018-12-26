@@ -18,10 +18,12 @@
                 <li><a href="/">Exchange</a></li>
                 <li><a href="/cryptocurrency">Cryptocurrency</a></li>
                 <li><a href="/gold">Gold</a></li>
-                <li><a href="/wallet">Wallet</a></li>
+                <security:authorize access="isAuthenticated()">
+                    <li><a href="/wallet">Wallet</a></li>
+                </security:authorize>
                 <li><a href="/contact">Contact</a></li>
                 <security:authorize access="isAuthenticated() and hasRole('ROLE_ADMIN')">
-                        <li><a href="/adminPanel"><b>ADMIN</b></a></li>
+                    <li><a href="/adminPanel"><b>ADMIN</b></a></li>
                 </security:authorize>
             </ul>
 
