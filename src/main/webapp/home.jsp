@@ -1,17 +1,16 @@
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/header.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Currency Online Exchange</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
