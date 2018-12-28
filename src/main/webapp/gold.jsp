@@ -91,7 +91,7 @@
                         <div class="card mb-3">
                             <div class="card-header">
                                 <i class="fas fa-chart-area"></i>
-                                Area Chart Example
+                                Gold Prices - Last 10 days
                             </div>
                             <div class="card-body">
                                 <canvas id="myAreaChart" width="100%" height="30"></canvas>
