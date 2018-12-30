@@ -19,6 +19,11 @@ public class GoldController {
         this.goldService = goldService;
     }
 
+    @GetMapping("/gold")
+    public String getGoldView() {
+        return "gold.jsp";
+    }
+
     @GetMapping("/gold/prices")
     public ResponseEntity<GoldRatesResult> getLastGoldPrice(Model model) {
         return new ResponseEntity<>(goldService.getGoldPricesForPeriod(), HttpStatus.OK);
