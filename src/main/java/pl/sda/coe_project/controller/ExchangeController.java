@@ -60,11 +60,6 @@ public class ExchangeController {
         return "wallet.jsp";
     }
 
-    @GetMapping("/gold")
-    public String getGoldView() {
-        return "gold.jsp";
-    }
-
     @ResponseBody
     @PostMapping("/exchange")
     public ResponseEntity<Object> exchange(@RequestBody CurrencyExchangeRequest exchangeRequest) {
