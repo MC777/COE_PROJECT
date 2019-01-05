@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><b class="glyphicon glyphicon-chevron-right"></b></a>
+            <a class="navbar-brand" href="/"><b class="fa fa-chevron-circle-right"></b></a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
@@ -33,7 +33,7 @@
                 </security:authorize>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><i class="glyphicon glyphicon-user"></i><security:authorize
+                       aria-expanded="false"><i class="fa fa-user"></i><security:authorize
                             access="isAuthenticated()"> <security:authentication
                             property="principal.username"/> </security:authorize> <span
                             class="caret"></span></a>
