@@ -39,6 +39,11 @@ public class ExchangeController {
         return "register.jsp";
     }
 
+    @GetMapping("/settings")
+    public String getSettingsView() {
+        return "settings.jsp";
+    }
+
     @PostMapping("/register")
     public String registerUser(@ModelAttribute UserDto user) {
         userService.addUser(user);
