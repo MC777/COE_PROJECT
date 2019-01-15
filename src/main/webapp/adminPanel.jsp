@@ -60,6 +60,7 @@
                 </th>
                 <th>Name</th>
                 <th>Surname</th>
+                <th>Pesel</th>
                 <th>Email</th>
                 <th>Address</th>
                 <th>Phone</th>
@@ -76,6 +77,7 @@
                 </td>
                 <td>Thomas</td>
                 <td>Hardy</td>
+                <td>11111111</td>
                 <td>thomashardy@mail.com</td>
                 <td>89 Chiaroscuro Rd, Portland, USA</td>
                 <td>(171) 555-2222</td>
@@ -96,6 +98,7 @@
                 </td>
                 <td>Dominique</td>
                 <td>Perrier</td>
+                <td>22222222</td>
                 <td>dominiqueperrier@mail.com</td>
                 <td>Obere Str. 57, Berlin, Germany</td>
                 <td>(313) 555-5735</td>
@@ -116,6 +119,7 @@
                 </td>
                 <td>Maria</td>
                 <td>Anders</td>
+                <td>3333333333</td>
                 <td>mariaanders@mail.com</td>
                 <td>25, rue Lauriston, Paris, France</td>
                 <td>(503) 555-9931</td>
@@ -136,6 +140,7 @@
                 </td>
                 <td>Fran</td>
                 <td>Wilson</td>
+                <td>44444444</td>
                 <td>franwilson@mail.com</td>
                 <td>C/ Araquil, 67, Madrid, Spain</td>
                 <td>(204) 619-5731</td>
@@ -156,6 +161,7 @@
                 </td>
                 <td>Martin</td>
                 <td>Blank</td>
+                <td>55555555</td>
                 <td>martinblank@mail.com</td>
                 <td>Via Monte Bianco 34, Turin, Italy</td>
                 <td>(480) 631-2097</td>
