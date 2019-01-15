@@ -63,7 +63,10 @@
                 <th>Pesel</th>
                 <th>Email</th>
                 <th>Address</th>
+                <th>City</th>
+                <th>Postal code</th>
                 <th>Phone</th>
+                <th>Citizenship</th>
                 <th>Actions</th>
             </tr>
             </thead>
@@ -80,6 +83,9 @@
                 <td>11111111</td>
                 <td>thomashardy@mail.com</td>
                 <td>89 Chiaroscuro Rd, Portland, USA</td>
+                <td>Portland</td>
+                <td>PE023</td>
+                <td>USA</td>
                 <td>(171) 555-2222</td>
                 <td>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
@@ -101,6 +107,9 @@
                 <td>22222222</td>
                 <td>dominiqueperrier@mail.com</td>
                 <td>Obere Str. 57, Berlin, Germany</td>
+                <td>Berlin</td>
+                <td>23-233</td>
+                <td>DE</td>
                 <td>(313) 555-5735</td>
                 <td>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
@@ -122,6 +131,9 @@
                 <td>3333333333</td>
                 <td>mariaanders@mail.com</td>
                 <td>25, rue Lauriston, Paris, France</td>
+                <td>Paris</td>
+                <td>ss34ff</td>
+                <td>FR</td>
                 <td>(503) 555-9931</td>
                 <td>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
@@ -143,6 +155,9 @@
                 <td>44444444</td>
                 <td>franwilson@mail.com</td>
                 <td>C/ Araquil, 67, Madrid, Spain</td>
+                <td>Madrid</td>
+                <td>ASD123</td>
+                <td>SP</td>
                 <td>(204) 619-5731</td>
                 <td>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
@@ -164,6 +179,9 @@
                 <td>55555555</td>
                 <td>martinblank@mail.com</td>
                 <td>Via Monte Bianco 34, Turin, Italy</td>
+                <td>Turin</td>
+                <td>31-222</td>
+                <td>IT</td>
                 <td>(480) 631-2097</td>
                 <td>
                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
