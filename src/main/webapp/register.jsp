@@ -1,8 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="css/header.css"/>
-    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="css/register.css"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,27 +12,24 @@
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="/css/theme.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js"></script>
-    <script type="text/javascript" src="js/register.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<jsp:include page="/WEB-INF/fragments/header.jsp"/>
-<div class="container h-100">
-    <main class="my-form">
-        <div class="cotainer register_background">
-            <%--<div class="row justify-content-md-center">--%>
-            <div class="col-md-8">
-                <div class="card justify-content-md-center">
-                    <form name="my-form" id="register_form" action="/register" method="post">
+
+<div id="registerModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+                <form name="my-form" id="register_form" action="/register" method="post">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Register Form</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
                             <div class="col-md-6">
@@ -124,19 +118,26 @@
                                 <input type="text" id="citizenship" class="form-control" name="citizenship">
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <button type="submit" class="btn btn-success btn-block" id="register">
-                                Register
-                            </button>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            <input type="submit" class="btn btn-success" value="Register">
+                             <%--<button type="submit" class="btn btn-success btn-block" id="register">
+                                 Register
+                             </button>--%>
                         </div>
-                    </form>
-                </div>
-            </div>
+                    </div>
+                </form>
+            <script>
+                $("#my-form").validate();
+            </script>
         </div>
-    </main>
+    </div>
 </div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 </body>
+<script type="text/javascript" src="js/register.js"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
-
-
