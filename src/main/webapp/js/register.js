@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#register_form').validate({
+    $("#register_form").validate({
         rules: {
             name: "required",
             surname: "required",
