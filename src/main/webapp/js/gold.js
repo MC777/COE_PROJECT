@@ -48,8 +48,8 @@ $.ajax({
                     }],
                     yAxes: [{
                         ticks: {
-                            min: 145,
-                            max: 155,
+                            min: 150,
+                            max: 160,
                             maxTicksLimit: 2001
                         },
                         gridLines: {
