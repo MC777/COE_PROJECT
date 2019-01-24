@@ -226,6 +226,10 @@
                         <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
+                        <label>Pesel</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
                         <label>Email</label>
                         <input type="email" class="form-control" required>
                     </div>
@@ -234,7 +238,19 @@
                         <textarea class="form-control" required></textarea>
                     </div>
                     <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Postal code</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
                         <label>Phone</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Citizenship</label>
                         <input type="text" class="form-control" required>
                     </div>
                 </div>
