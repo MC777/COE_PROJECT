@@ -62,3 +62,10 @@
 .cardsView .card-body{
     background-color: #f3f3f3;
 }
+
+.cardsView .card-header{
+    background-color: #286090;
+    margin-top: 20px;
+    color: white;
+    font-size: x-large;
+}
