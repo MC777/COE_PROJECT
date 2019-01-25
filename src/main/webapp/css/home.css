@@ -69,3 +69,8 @@
     color: white;
     font-size: x-large;
 }
+
+.cardsView .card-text{
+    margin: 0px;
+    font-size: x-large;
+}
