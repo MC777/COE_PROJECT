@@ -58,3 +58,7 @@
 .currencyExchangeBtn{
     width: 150px;
 }
+
+.cardsView .card-body{
+    background-color: #f3f3f3;
+}
