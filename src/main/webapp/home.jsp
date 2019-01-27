@@ -74,15 +74,17 @@
                                     <option value="6">CAD</option>
                                 </select>
                             </div>
+                            <button type="button" class="btn btn-primary currencyExchangeBtn" id="currencyExchangeBtn">Exchange
+                                Now
+                            </button>
+                            <security:authorize access="isAuthenticated()">
+                                <button type="button" class="btn btn-success currencyBuyBtn" id="currencyBuyBtn">Buy Now
+                                </button>
+                            </security:authorize>
                         </div>
                     </form>
                 </div>
-                <button type="button" class="btn btn-primary currencyExchangeBtn" id="currencyExchangeBtn">Exchange
-                    Now
-                </button>
-                <security:authorize access="isAuthenticated()">
-                    <button type="button" class="btn btn-success currencyBuyBtn" id="currencyBuyBtn">Buy Now</button>
-                </security:authorize>
+
 
                 <div class="cardsView">
                     <div class="row">
