@@ -85,7 +85,6 @@
                     </form>
                 </div>
 
-
                 <div class="cardsView">
                     <div class="row">
                         <div class="col-sm-3">
