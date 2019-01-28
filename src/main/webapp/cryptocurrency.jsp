@@ -73,15 +73,17 @@
                                     <option value="6">CAD</option>
                                 </select>
                             </div>
+                            <button type="button" class="btn btn-primary cryptoExchangeBtn" id="cryptoExchangeBtn">
+                                Exchange
+                                Now
+                            </button>
+                            <security:authorize access="isAuthenticated()">
+                                <button type="button" class="btn btn-success cryptoBuyBtn" id="cryptoBuyBtn">Buy Now
+                                </button>
+                            </security:authorize>
                         </div>
                     </form>
                 </div>
-                <button type="button" class="btn btn-primary cryptoExchangeBtn" id="cryptoExchangeBtn">Exchange
-                    Now
-                </button>
-                <security:authorize access="isAuthenticated()">
-                    <button type="button" class="btn btn-success cryptoBuyBtn" id="cryptoBuyBtn">Buy Now</button>
-                </security:authorize>
 
                 <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
