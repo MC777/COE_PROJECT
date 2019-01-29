@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Gold</title>
-
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
@@ -82,7 +81,6 @@
                         </div>
                     </form>
                 </div>
-
                 <!-- Area Chart Example-->
                 <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
@@ -98,7 +96,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
