@@ -21,7 +21,22 @@
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
 <header>
-    <%--TODO: header--%>
+    <div class="container h-100">
+        <div class="d-flex text-center h-100">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-subtitle">SETTINGS</h4>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="" class="btn btn-primary">
+                                Personal data update
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <jsp:include page="/WEB-INF/fragments/footer.jsp"/>
 <script
