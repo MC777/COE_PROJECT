@@ -31,12 +31,10 @@
     <link href="/css/theme.css" rel="stylesheet">
 
 </head>
-</head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
 <jsp:include page="/WEB-INF/fragments/addEmployeeModal.jsp"/>
 <jsp:include page="/WEB-INF/fragments/editEmployeeModal.jsp"/>
-<body>
 <div class="container">
     <div class="table-wrapper">
         <div class="table-title">
@@ -234,12 +232,10 @@
         </div>
     </div>
 </div>
+<jsp:include page="/WEB-INF/fragments/footer.jsp"/>
 </body>
 <script type="text/javascript" src="js/adminPanel.js"></script>
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<jsp:include page="/WEB-INF/fragments/footer.jsp"/>
-</body>
 </html>
