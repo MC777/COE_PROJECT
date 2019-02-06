@@ -21,19 +21,36 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
+<jsp:include page="/WEB-INF/fragments/editEmployeeModal.jsp"/>
 <header>
     <div class="container h-100">
         <div class="d-flex text-center h-100">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-subtitle">SETTINGS</h4>
-                    <ul class="list-inline m-0">
-                        <li class="list-inline-item">
-                            <a href="" class="btn btn-primary">
-                                Personal data update
-                            </a>
-                        </li>
-                    </ul>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr class="table-success">
+                            <th scope="col">#</th>
+                            <th scope="col">Option</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Personal data</td>
+                            <td>
+                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Default currency</td>
+                            <td>Edit</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
