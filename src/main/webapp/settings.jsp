@@ -31,9 +31,9 @@
                     <table class="table table-hover">
                         <thead>
                         <tr class="table-success">
-                            <th scope="col">#</th>
-                            <th scope="col">Option</th>
-                            <th scope="col">Action</th>
+                            <th scope="col" style="width: 1%">#</th>
+                            <th scope="col" style="width: 2%">Option</th>
+                            <th scope="col" style="width: 10%">Action</th>
                         </tr>
                         </thead>
                         <tbody>
