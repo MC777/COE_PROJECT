@@ -30,6 +30,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <security:authorize access="isAuthenticated()">
                     <li><a href="#"><span class="badge badge-pill badge-secondary">Cryptocurrency: 1000</span></a></li>
+                    <li><a href="#"><span class="badge badge-pill badge-warning">Gold: 1000</span></a></li>
                     <li><a href="#"><span class="badge badge-pill badge-success">Wallet: 1000</span></a></li>
                 </security:authorize>
                 <li class="dropdown">
