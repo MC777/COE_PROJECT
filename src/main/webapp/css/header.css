@@ -2,3 +2,8 @@
     color: white;
     background-color: green;
 }
+
+.navbar .badge-secondary{
+    color: white;
+    background-color: #0056b3;
+}
