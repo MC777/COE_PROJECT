@@ -57,6 +57,31 @@
                                 </select>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cryptocurrency badge</td>
+                            <td>
+                                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success"
+                                       data-size="small">
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gold badge</td>
+                            <td>
+                                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success"
+                                       data-size="small">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Wallet badge</td>
+                            <td>
+                                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success"
+                                       data-size="small">
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
