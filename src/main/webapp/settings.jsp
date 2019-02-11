@@ -47,7 +47,14 @@
                         <tr>
                             <th scope="row">2</th>
                             <td>Default currency</td>
-                            <td>Edit</td>
+                            <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>PLN</option>
+                                    <option value="1">USD</option>
+                                    <option value="2">GBP</option>
+                                    <option value="3">CHF</option>
+                                </select>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
