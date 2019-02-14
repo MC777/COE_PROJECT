@@ -6,3 +6,7 @@
     text-align: left;
     color: green;
 }
+
+.table .btn-group .dropdown-toggle{
+    width: 80px;
+}
