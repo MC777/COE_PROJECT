@@ -42,7 +42,7 @@
                     <form class="form-inline well">
                         <div class="row">
                             <div class="form-group">
-                                <input class="form-control" type="text" value="1.02458">
+                                <input class="form-control" type="text" placeholder="I have:">
                             </div>
                             <div class="form-group">
                                 <select class="custom-select custom-select-lg">
@@ -61,7 +61,7 @@
                                 <i class="fa fa-refresh fa-spin"></i>
                             </div>
                             <div class="form-group">
-                                <input class="form-control form-control-lg" type="text" value="9526.39">
+                                <input class="form-control form-control-lg" type="text" placeholder="I want:">
                             </div>
                             <div class="form-group">
                                 <select class="custom-select custom-select-lg">
