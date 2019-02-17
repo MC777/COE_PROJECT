@@ -61,7 +61,7 @@
                                 <i class="fa fa-refresh fa-spin"></i>
                             </div>
                             <div class="form-group">
-                                <input class="form-control form-control-lg" type="number" id="exchangeValueToInput"
+                                <input class="form-control form-control-lg" type="number" placeholder="I want:" id="exchangeValueToInput"
                                        disabled>
                             </div>
                             <div class="form-group">
