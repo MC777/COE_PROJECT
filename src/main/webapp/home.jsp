@@ -41,7 +41,7 @@
                     <form class="form-inline well">
                         <div class="row">
                             <div class="form-group">
-                                <input class="form-control" type="number" placeholder="1200"
+                                <input class="form-control" type="number" placeholder="I have:"
                                        id="exchangeValueFromInput">
                             </div>
                             <div class="form-group">
