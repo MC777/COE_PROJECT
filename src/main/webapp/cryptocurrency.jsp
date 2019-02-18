@@ -36,7 +36,7 @@
         <div class="d-flex text-center h-100">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-subtitle">Exchange currency from here</h5>
+                    <h5 class="card-subtitle">Exchange cryptocurrency from here</h5>
                 </div>
                 <div class="card-body bg-light">
                     <form class="form-inline well">
