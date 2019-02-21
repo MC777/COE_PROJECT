@@ -22,8 +22,46 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
-
-
+<header>
+    <div class="container h-100">
+        <div class="d-flex text-center h-100">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-subtitle">HISTORY</h4>
+                    <table class="table">
+                        <thead>
+                        <tr class="table">
+                            <th scope="col" style="width: 1%">#</th>
+                            <th scope="col" style="width: 2%">Category</th>
+                            <th scope="col" style="width: 2%">Action</th>
+                            <th scope="col" style="width: 2%">Amount</th>
+                            <th scope="col" style="width: 2%">Date</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                        </tr>
+                        </tbody>
+                        <tr>
+                            <th scope="row">4</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
