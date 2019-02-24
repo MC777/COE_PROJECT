@@ -1,0 +1,8 @@
+.container .h-100 {
+    margin-top: 60px;
+}
+.card-subtitle{
+    font-weight: bold;
+    text-align: left;
+    color: green;
+}
