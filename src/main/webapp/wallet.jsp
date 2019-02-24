@@ -39,19 +39,38 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
+                            <td>Gold</td>
+                            <td>Buy</td>
+                            <td>100</td>
+                            <td>01.01.2019</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
+                            <td>Gold</td>
+                            <td>Buy</td>
+                            <td>100</td>
+                            <td>01.01.2019</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
+                            <td>Gold</td>
+                            <td>Buy</td>
+                            <td>100</td>
+                            <td>01.01.2019</td>
                         </tr>
-                        </tbody>
                         <tr>
                             <th scope="row">4</th>
+                            <td>Gold</td>
+                            <td>Buy</td>
+                            <td>100</td>
+                            <td>01.01.2019</td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
+                            <td>Gold</td>
+                            <td>Buy</td>
+                            <td>100</td>
+                            <td>01.01.2019</td>
                         </tr>
                         </tbody>
                     </table>
