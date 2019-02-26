@@ -25,6 +25,12 @@
         <div class="d-flex text-center h-100">
             <div class="card">
                 <div class="card-body">
+                    <h4 class="card-subtitle">SUMMARY</h4>
+                    <br>
+                    <h5 class="card-subtitle">GOLD: </h5>
+                    <h5 class="card-subtitle">CRYPTOCURREMCY: </h5>
+                    <h5 class="card-subtitle">WALLET: </h5>
+                    <br>
                     <h4 class="card-subtitle">HISTORY</h4>
                     <table class="table">
                         <thead>
