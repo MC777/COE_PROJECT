@@ -23,3 +23,7 @@
 .container-fluid .card .card-body .table-responsive .dataTables_length {
     text-align: left;
 }
+
+.container-fluid .card .card-body .table-responsive .dataTables_filter{
+    text-align: right;
+}
