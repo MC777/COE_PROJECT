@@ -1,3 +1,7 @@
+.container .d-flex .card .container-fluid{
+    padding: 30px 90px;
+}
+
 .container-fluid{
     background-color: #ffffff;
 }
