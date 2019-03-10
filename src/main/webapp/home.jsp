@@ -89,7 +89,7 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="card text-white bg-dark mb-3">
-                                <div class="card-header">USD > PLN</div>
+                                <div class="card-header">USD <i class="fas fa-arrow-circle-right"></i> PLN</div>
                                 <div class="card-body">
                                     <p class="card-text">4.31</p>
                                 </div>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card text-white bg-dark mb-3">
-                                <div class="card-header">EUR > PLN</div>
+                                <div class="card-header">EUR <i class="fas fa-arrow-circle-right"></i> PLN</div>
                                 <div class="card-body">
                                     <p class="card-text">5.21</p>
                                 </div>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card text-white bg-dark mb-3">
-                                <div class="card-header">GBP > PLN</div>
+                                <div class="card-header">GBP <i class="fas fa-arrow-circle-right"></i> PLN</div>
                                 <div class="card-body">
                                     <p class="card-text">4.39</p>
                                 </div>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card text-white bg-dark mb-3">
-                                <div class="card-header">CHF > PLN</div>
+                                <div class="card-header">CHF <i class="fas fa-arrow-circle-right"></i> PLN</div>
                                 <div class="card-body">
                                     <p class="card-text">6.33</p>
                                 </div>
