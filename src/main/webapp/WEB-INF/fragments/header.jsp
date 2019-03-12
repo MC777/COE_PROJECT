@@ -1,5 +1,5 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
-
+<jsp:include page="/register.jsp"/>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
