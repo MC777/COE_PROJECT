@@ -47,7 +47,7 @@
                         </security:authorize>
                         <li><a href="/contact">Contact</a></li>
                         <security:authorize access="!isAuthenticated()">
-                            <li><a href="/registerForm">Register</a></li>
+                            <li><a href="#registerModal" data-toggle="modal">Register</a></li>
                         </security:authorize>
                         <security:authorize access="isAuthenticated()">
                             <li><a href="/settings">Settings</a></li>
