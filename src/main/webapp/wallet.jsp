@@ -31,7 +31,11 @@
                     <h5 class="card-subtitle">CRYPTOCURREMCY: </h5>
                     <h5 class="card-subtitle">WALLET: </h5>
                     <br>
-                    <h4 class="card-subtitle">HISTORY</h4>
+                    <h4 class="card-subtitle">HISTORY
+                        <button type="button" class="btn btn-light btn-sm pull-right"><i class="fas fa-file-export"></i>
+                            Export to Excel
+                        </button>
+                    </h4>
                     <table class="table">
                         <thead>
                         <tr class="table">
