@@ -113,7 +113,7 @@
 <!-- Page level plugin JavaScript-->
 <script src="vendor/chart.js/Chart.min.js"></script>
 <!-- Custom scripts for all pages-->
-<script src="js/sb-admin.min.js"></script>
+<script src="js/sb-admin.js"></script>
 <script type="text/javascript" src="js/gold.js"></script>
 </body>
 </html>
