@@ -8,9 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Currency Online Exchange</title>
-
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
@@ -21,10 +19,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
-
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -84,7 +80,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="cardsView">
                     <div class="row">
                         <div class="col-sm-3">
@@ -142,7 +137,6 @@
     </security:authorize>
 </header>
 <jsp:include page="/WEB-INF/fragments/footer.jsp"/>
-
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
