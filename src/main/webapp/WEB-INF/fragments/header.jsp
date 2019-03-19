@@ -29,9 +29,9 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <security:authorize access="isAuthenticated()">
-                    <li><a href="#"><span class="badge badge-pill badge-secondary">Cryptocurrency: 1000</span></a></li>
-                    <li><a href="#"><span class="badge badge-pill badge-warning">Gold: 1000</span></a></li>
-                    <li><a href="#"><span class="badge badge-pill badge-success">Wallet: 1000</span></a></li>
+                    <li><a href="#"><span class="badge badge-pill badge-success">CASH: 1000</span></a></li>
+                    <li><a href="#"><span class="badge badge-pill badge-secondary">CRYP: 1000</span></a></li>
+                    <li><a href="#"><span class="badge badge-pill badge-warning">GOLD: 1000</span></a></li>
                 </security:authorize>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
