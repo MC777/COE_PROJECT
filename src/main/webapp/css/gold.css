@@ -7,6 +7,10 @@
     border-radius: 4px;
 }
 
+.container-fluid .card .card-header{
+    padding-bottom: 10px;
+}
+
 .goldBuyBtn{
     width: 150px;
     margin-left: 25px;
