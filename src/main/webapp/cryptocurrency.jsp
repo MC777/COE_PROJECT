@@ -9,9 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Cryptocurrency</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -25,7 +23,6 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
-
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -83,7 +80,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div id="content-wrapper" style="margin-top: 20px">
                     <div class="container-fluid">
                         <!-- DataTables Example -->
@@ -123,10 +119,7 @@
         </div>
     </div>
 </header>
-
-
 <jsp:include page="/WEB-INF/fragments/footer.jsp"/>
-
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -137,14 +130,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 <!-- Page level plugin JavaScript-->
 <script src="vendor/datatables/jquery.dataTables.js"></script>
 <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
-
 <!-- Demo scripts for this page-->
 <script src="js/demo/datatables-demo.js"></script>
 </body>
