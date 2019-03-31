@@ -5,6 +5,10 @@ body {
     font-size: 13px;
 }
 
+.table{
+    font-size: small;
+}
+
 .table-wrapper {
     background: #fff;
     padding: 20px 25px;
